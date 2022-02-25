@@ -9,7 +9,7 @@ class SoftwaresController < ApplicationController
 
     def create
       @software = Software.new(params.require(:software).permit(:name, :version))
-      if @software.save
+      if @slssoftware.save
         flash[:notice] = 'software registrado com sucesso'
         redirect_to softwares_path
       else

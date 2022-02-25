@@ -1,10 +1,8 @@
 <h1>Lista de Softwares </h1>
 
-<% @softwares.each do |s| %>
-  <div>
+<% @softwares.each do |s| %>  
     <%= s.name %> - <%= s.version %>
     <%= link_to 'Editar', edit_software_path(s.id) %>
-    <%= button_to 'Delete', software_path(s), method: :delete  %>
-  </div>
-  <%= link_to 'Inicio', root_path %> 
-<% end %>
+    <%= button_to 'Delete', software_path(s), method: :delete  %>    
+<% end %><bR>
+<%= button_to 'voltar ', root_path, method: :get  %>

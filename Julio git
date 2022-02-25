@@ -1,0 +1,3 @@
+git add . ( ponto server para add tudo)
+git commit -m "obs do commit"
+git push ( pronto vai tudo )
