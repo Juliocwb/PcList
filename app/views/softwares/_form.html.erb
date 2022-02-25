@@ -1,0 +1,13 @@
+<%= form_with model: @software do |s| %>
+    <div>
+    <%= s.label :name, 'Nome' %>
+    <%= s.text_field :name %>
+    </div>
+    <div>
+    <%= s.label :version, 'Versão' %>
+    <%= s.text_field :version %>
+    </div>
+    <div>
+    <%= s.submit 'Salvar' %>
+    </div>
+<% end %>
